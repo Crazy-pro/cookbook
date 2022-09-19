@@ -9,7 +9,7 @@ import lombok.*;
 import java.math.BigDecimal;
 
 /**
- * Copyright Alex Klimchuk (c) 2022.
+ * Copyright Alex Klimchuk (c) 31.10.2021.
  */
 @Data
 @Entity

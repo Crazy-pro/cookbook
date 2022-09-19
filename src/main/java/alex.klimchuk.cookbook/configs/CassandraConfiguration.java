@@ -1,4 +1,4 @@
-package alex.klimchuk.cookbook.config;
+package alex.klimchuk.cookbook.configs;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.data.cassandra.config.*;
@@ -7,7 +7,7 @@ import org.springframework.data.cassandra.core.cql.keyspace.*;
 import java.util.List;
 
 /**
- * Copyright Alex Klimchuk (c) 2022.
+ * Copyright Alex Klimchuk (c) 31.10.2021.
  */
 @Configuration
 public class CassandraConfiguration extends AbstractCassandraConfiguration {

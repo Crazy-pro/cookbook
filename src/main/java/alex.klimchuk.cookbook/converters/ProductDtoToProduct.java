@@ -8,7 +8,7 @@ import org.springframework.util.StringUtils;
 //import org.bson.types.ObjectId;
 
 /**
- * Copyright Alex Klimchuk (c) 2022.
+ * Copyright Alex Klimchuk (c) 31.10.2021.
  */
 @Component
 public class ProductDtoToProduct implements Converter<ProductDto, Product> {

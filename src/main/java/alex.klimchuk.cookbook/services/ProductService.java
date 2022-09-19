@@ -6,7 +6,7 @@ import alex.klimchuk.cookbook.domain.Product;
 import java.util.List;
 
 /**
- * Copyright Alex Klimchuk (c) 2022.
+ * Copyright Alex Klimchuk (c) 31.10.2021.
  */
 public interface ProductService {
 

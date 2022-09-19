@@ -16,7 +16,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * Copyright Alex Klimchuk (c) 2022.
+ * Copyright Alex Klimchuk (c) 31.10.2021.
  */
 @Slf4j
 @Service
