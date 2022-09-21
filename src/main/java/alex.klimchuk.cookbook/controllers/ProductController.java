@@ -34,13 +34,13 @@ public class ProductController {
     @GetMapping({"", "/list"})
     public String getProducts(Model model) {
         model.addAttribute("products", productService.getAllProducts());
-        return "product/list";
+        return "/product/list";
     }
 
     @GetMapping("/show/{id}")
     public String getProduct(@PathVariable /*String -- type for NoSqlDB / UUID -- type for CassandraDB*/  Long id, Model model) {
         model.addAttribute("product", productService.getById(id));
-        return "product/show";
+        return "/product/show";
     }
 
     @RequestMapping("/edit/{id}")
@@ -49,20 +49,20 @@ public class ProductController {
         ProductDto ProductDto = productToProductDto.convert(product);
 
         model.addAttribute("ProductDto", ProductDto);
-        return "product/productForm";
+        return "/product/productForm";
     }
 
     @PostMapping("/new")
     public String newProduct(Model model) {
         model.addAttribute("ProductDto", new ProductDto());
-        return "product/productForm";
+        return "/product/productForm";
     }
 
     @PostMapping
     public String saveOrUpdateProduct(@Valid ProductDto ProductDto, BindingResult bindingResult) {
 
         if (bindingResult.hasErrors()) {
-            return "product/productForm";
+            return "/product/productForm";
         }
 
         Product savedProduct = productService.saveOrUpdateProductDto(ProductDto);

@@ -34,7 +34,7 @@ public class ControllerExceptionHandler extends ResponseEntityExceptionHandler {
         log.error("Handling not found exception!", exception.getMessage());
         ModelAndView modelAndView = new ModelAndView();
         modelAndView.addObject("exception", exception);
-        modelAndView.setViewName("errorPage");
+        modelAndView.setViewName("/errorPage");
         return modelAndView;
     }
 
@@ -44,22 +44,22 @@ public class ControllerExceptionHandler extends ResponseEntityExceptionHandler {
         log.error("Handling number format exception!", exception.getMessage());
         ModelAndView modelAndView = new ModelAndView();
         modelAndView.addObject("exception", exception);
-        modelAndView.setViewName("errorPage");
+        modelAndView.setViewName("/errorPage");
         return modelAndView;
     }
 
-    @ExceptionHandler(HttpMessageNotReadableException.class)
     public ResponseEntity<Object> handleHttpMessageNotReadable(final HttpMessageNotReadableException ex,
-                                                               final HttpHeaders headers, final WebRequest request) {
+                                                               final HttpHeaders headers,
+                                                               final HttpStatus status, final WebRequest request) {
         final String responseBody = "Http message not readable exception";
-        return handleExceptionInternal(ex, responseBody, headers, HttpStatus.BAD_REQUEST, request);
+        return handleExceptionInternal(ex, responseBody, headers, status, request);
     }
 
-    @ExceptionHandler(MethodArgumentNotValidException.class)
     public ResponseEntity<Object> handleMethodArgumentNotValid(final MethodArgumentNotValidException ex,
-                                                               final HttpHeaders headers, final WebRequest request) {
+                                                               final HttpHeaders headers,
+                                                               final HttpStatus status, final WebRequest request) {
         final String responseBody = "Method argument not valid exception";
-        return handleExceptionInternal(ex, responseBody, headers, HttpStatus.BAD_REQUEST, request);
+        return handleExceptionInternal(ex, responseBody, headers, status, request);
     }
 
     @ExceptionHandler(ConstraintViolationException.class)

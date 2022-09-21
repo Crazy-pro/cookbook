@@ -7,7 +7,7 @@
     <version>0.0.7-SNAPSHOT</version>
     <packaging>jar</packaging>
     <name>cookbook</name>
-    <description>Simple project for Spring Boot for showing settings</description>
+    <description>Simple project for Spring Boot for checking settings</description>
 
     <properties>
         <java.version>11</java.version>
