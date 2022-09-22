@@ -9,7 +9,7 @@ This repository contains a Spring Boot example project for different SQL / NoSQL
 3. Run needed App in Docker Container or just use the App installed on your Device.
 4. Check and uncomment some lines of code if it needs for concrete tool.
 5. Run the application and check end-points work using Postman using link below:
-- http://localhost:8080/
+   - http://localhost:8080/
 
 
 
