@@ -23,14 +23,14 @@ import java.util.Map;
 public class ProductServiceImpl implements ProductService {
 
     private ProductRepository productRepository;
-    private ProductDtoToProduct ProductDtoToProduct;
+    private ProductDtoToProduct productDtoToProduct;
     private JmsTemplate jmsTemplate;
     private RabbitTemplate rabbitTemplate;
 
     public ProductServiceImpl(ProductRepository productRepository, ProductDtoToProduct productDtoToProduct,
                               JmsTemplate jmsTemplate, RabbitTemplate rabbitTemplate) {
         this.productRepository = productRepository;
-        ProductDtoToProduct = productDtoToProduct;
+        this.productDtoToProduct = productDtoToProduct;
         this.jmsTemplate = jmsTemplate;
         this.rabbitTemplate = rabbitTemplate;
     }
@@ -60,7 +60,7 @@ public class ProductServiceImpl implements ProductService {
 
     @Override
     public Product saveOrUpdateProductDto(ProductDto ProductDto) {
-        Product savedProduct = saveOrUpdate(ProductDtoToProduct.convert(ProductDto));
+        Product savedProduct = saveOrUpdate(productDtoToProduct.convert(ProductDto));
 
         log.debug("Saved Product Id: " + savedProduct.getId());
         return savedProduct;

@@ -48,6 +48,7 @@ public class ControllerExceptionHandler extends ResponseEntityExceptionHandler {
         return modelAndView;
     }
 
+    @Override
     public ResponseEntity<Object> handleHttpMessageNotReadable(final HttpMessageNotReadableException ex,
                                                                final HttpHeaders headers,
                                                                final HttpStatus status, final WebRequest request) {
@@ -55,6 +56,7 @@ public class ControllerExceptionHandler extends ResponseEntityExceptionHandler {
         return handleExceptionInternal(ex, responseBody, headers, status, request);
     }
 
+    @Override
     public ResponseEntity<Object> handleMethodArgumentNotValid(final MethodArgumentNotValidException ex,
                                                                final HttpHeaders headers,
                                                                final HttpStatus status, final WebRequest request) {

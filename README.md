@@ -14,7 +14,7 @@ This repository contains a Spring Boot example project for different SQL / NoSQL
 
 
 ### Technologies:
-- Programming language: Java 11;
+- Programming language: Java 15;
 - Frameworks:
   - Spring (Boot, Core, Data, Web, Test);
   - Hibernate.
