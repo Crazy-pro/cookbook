@@ -15,13 +15,13 @@ This repository contains a Spring Boot example project for different SQL / NoSQL
 ### Technologies:
 - Programming language: Java 11;
 - Frameworks:
-    - Spring (Boot, Core, Data, Web, Test);
-    - Hibernate.
+  - Spring (Boot, Core, Data, Web, Test);
+  - Hibernate.
 - Query language: SQL;
 - IDE: IntelliJ IDEA;
 - Databases:
-    - MariaDB, OracleDB, MS SQL Server, MySQL, PostgreSQL, SQLite, DB2, H2;
-    - MongoDB, Cassandra, Redis, Neo4J.
+  - MariaDB, OracleDB, MS SQL Server, MySQL, PostgreSQL, SQLite, DB2, H2;
+  - MongoDB, Cassandra, Redis, Neo4J.
 - Message Brokers: ActiveMQ, RabbitMQ, Kafka;
 - Tools: Lombok, Postman, Maven, Git, Docker, JDBC, JPA, JMS, HTTPs, XML, YAML, JSON;
 - Others: GitHub, HTML, CSS, ThymeLeaf.

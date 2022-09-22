@@ -33,7 +33,7 @@ public class MessageListener {
      *
      * @param message
      */
-    @JmsListener(destination = CookbookApplication.PRODUCT_MESSAGE_QUEUE, containerFactory = "jmsFactory") // ActiveMq
+    @JmsListener(destination = CookbookApplication.PRODUCT_MESSAGE_QUEUE, containerFactory = "jmsFactory") // ActiveMQ
     public void receiveMessage(Map<String, String> message) {
         log.debug("Received <" + message + ">");
         Long id = Long.valueOf(message.get("id"));
