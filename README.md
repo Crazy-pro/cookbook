@@ -16,7 +16,7 @@ This repository contains a Spring Boot example project for different SQL / NoSQL
 ### Technologies:
 - Programming language: Java 15;
 - Frameworks:
-  - Spring (Boot, Core, Data, Web, Test);
+  - Spring (Boot, Core, Data, WebMVC, Test);
   - Hibernate.
 - Query language: SQL;
 - IDE: IntelliJ IDEA;
@@ -25,4 +25,7 @@ This repository contains a Spring Boot example project for different SQL / NoSQL
   - MongoDB, Cassandra, Redis, Neo4J.
 - Message Brokers: ActiveMQ, RabbitMQ, Kafka;
 - Tools: Lombok, Postman, Maven, Git, Docker, JDBC, JPA, JMS, HTTPs, XML, YAML, JSON;
-- Others: GitHub, HTML, CSS, ThymeLeaf.
+- Others: GitHub, CircleCI, CodeCov, HTML, CSS, ThymeLeaf.
+
+[![CircleCI](https://circleci.com/gh/Crazy-pro/cookbook.svg?style=svg)](https://app.circleci.com/gh/Crazy-pro/cookbook)
+[![CodeCov](https://codecov.io/gh/Crazy-pro/cookbook/branch/master/graph/badge.svg)](https://codecov.io/gh/Crazy-pro/cookbook)

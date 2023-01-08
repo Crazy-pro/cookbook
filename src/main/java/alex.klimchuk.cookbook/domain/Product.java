@@ -14,8 +14,6 @@ import java.math.BigDecimal;
 @Data
 @Entity
 @Builder
-@ToString
-@EqualsAndHashCode
 @NoArgsConstructor
 @AllArgsConstructor
 @Table(name = "products")

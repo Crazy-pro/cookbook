@@ -10,7 +10,7 @@ import java.util.List;
  * Copyright Alex Klimchuk (c) 31.10.2021.
  */
 @Configuration
-public class CassandraConfiguration extends AbstractCassandraConfiguration {
+public class CassandraConfig extends AbstractCassandraConfiguration {
 
     public static final String KEYSPACE = "keyspace_name";
 
