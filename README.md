@@ -25,7 +25,7 @@ This repository contains a Spring Boot example project for different SQL / NoSQL
   - MongoDB, Cassandra, Redis, Neo4J.
 - Message Brokers: ActiveMQ, RabbitMQ, Kafka;
 - Tools: Lombok, Postman, Maven, Git, Docker, JDBC, JPA, JMS, HTTPs, XML, YAML, JSON;
-- Others: GitHub, CircleCI, CodeCov, SonarCloud, HTML, CSS, ThymeLeaf.
+- Others: GitHub, CircleCI, CodeCov, SonarLint, SonarCloud, HTML, CSS, ThymeLeaf.
 
 [![CircleCI](https://circleci.com/gh/Crazy-pro/cookbook.svg?style=svg)](https://app.circleci.com/gh/Crazy-pro/cookbook)
 [![CodeCov](https://codecov.io/gh/Crazy-pro/cookbook/branch/master/graph/badge.svg)](https://codecov.io/gh/Crazy-pro/cookbook)

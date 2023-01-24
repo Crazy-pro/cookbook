@@ -1,6 +1,6 @@
 package alex.klimchuk.cookbook.services;
 
-import alex.klimchuk.cookbook.CookbookApplication;
+import alex.klimchuk.cookbook.configs.JmsConfig;
 import alex.klimchuk.cookbook.dto.ProductDto;
 import alex.klimchuk.cookbook.converters.ProductDtoToProduct;
 import alex.klimchuk.cookbook.domain.Product;
@@ -72,7 +72,7 @@ public class ProductServiceImpl implements ProductService {
         actions.put("id", id);
 
         log.debug("Sending the index request through queue message");
-        jmsTemplate.convertAndSend(CookbookApplication.PRODUCT_MESSAGE_QUEUE, actions);
+        jmsTemplate.convertAndSend(JmsConfig.PRODUCT_MESSAGE_QUEUE, actions);
         //rabbitTemplate.convertAndSend(CookbookApplication.PRODUCT_MESSAGE_QUEUE, actions);
     }
 
