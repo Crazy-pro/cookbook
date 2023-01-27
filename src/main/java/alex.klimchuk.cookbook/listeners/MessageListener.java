@@ -22,7 +22,7 @@ public class MessageListener {
         this.productRepository = productRepository;
     }
 
-    @JmsListener(destination = JmsConfig.PRODUCT_MESSAGE_QUEUE, containerFactory = "jmsFactory") // ActiveMQ
+    @JmsListener(destination = JmsConfig.PRODUCT_MESSAGE_QUEUE, containerFactory = "jmsFactory")
     public void receiveMessage(Map<String, String> message) {
         log.debug("Received <" + message + ">");
         Long id = Long.valueOf(message.get("id"));
