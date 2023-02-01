@@ -140,11 +140,6 @@
             <version>1.18.24</version>
             <optional>true</optional>
         </dependency>
-        <dependency>
-            <groupId>alex.klimchuk</groupId>
-            <artifactId>cookbook</artifactId>
-            <version>0.0.7-SNAPSHOT</version>
-        </dependency>
     </dependencies>
 
     <build>
