@@ -1,6 +1,6 @@
 package alex.klimchuk.cookbook.domain;
 
-import jakarta.persistence.*;
+import javax.persistence.*;
 import lombok.*;
 //import org.springframework.data.redis.core.RedisHash;
 //import org.bson.types.ObjectId;

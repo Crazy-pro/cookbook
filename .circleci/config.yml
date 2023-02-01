@@ -6,7 +6,15 @@ orbs:
 jobs:
   build:
     docker:
-      - image: cimg/openjdk:15.0
+      - image: cimg/openjdk:18.0.2
+      - image: cimg/mysql:8.0
+        auth:
+          username: mydockerhub-user
+          password: $DOCKERHUB_PASSWORD
+        environment:
+          MYSQL_DB: pet_clinic
+          MYSQL_USER: mysql
+          MYSQL_PASSWORD: admin
     steps:
       - checkout
       - run:

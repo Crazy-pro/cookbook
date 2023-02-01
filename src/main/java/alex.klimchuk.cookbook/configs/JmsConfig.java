@@ -1,6 +1,6 @@
 package alex.klimchuk.cookbook.configs;
 
-import jakarta.jms.ConnectionFactory;
+import javax.jms.ConnectionFactory;
 import org.springframework.amqp.core.Queue;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.boot.autoconfigure.jms.DefaultJmsListenerContainerFactoryConfigurer;
