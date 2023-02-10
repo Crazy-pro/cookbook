@@ -2,7 +2,7 @@
 This repository contains a Spring Boot example project for different SQL / NoSQL Databases and Message Brokers. 
 
 
-
+ 
 ### How to start:
 1. Install and run any IDE for working with Java.
 2. Install the latest version of docker if you still haven't done it.
